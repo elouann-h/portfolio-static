@@ -49,6 +49,9 @@ if (!isMobile) {
         }
     });
 }
+else {
+    alert("We recommend you to use a bigger screen to see the website properly. A mobile version will be available soon.");
+}
 
 // Create the observer for the different elements
 const observer = new IntersectionObserver(entries => {

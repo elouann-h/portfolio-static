@@ -168,15 +168,15 @@ div.scroll-logo {
     margin: 5% auto;
 }
 
-#my-skills {
-    background-color: var(--white-bg-color);
-    top: -70px;
-    position: relative;
-    text-align: center;
-    padding-bottom: 20%;
-}
-
 @media screen and (min-width: 1209px) {
+    #my-skills {
+        background-color: var(--white-bg-color);
+        top: -70px;
+        position: relative;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+
     #my-skills-list {
         position: relative;
         top: -25px;
@@ -218,45 +218,15 @@ div.scroll-logo {
     }
 }
 
-@media screen and (max-width: 768px) {
-    #my-skills-list {
+@media screen and (max-width: 1209px) {
+    #my-skills {
+        background-color: var(--white-bg-color);
+        top: -70px;
         position: relative;
-        top: -25px;
+        text-align: center;
+        padding-bottom: 20%;
     }
 
-    .skill {
-        height: 80px;
-    }
-
-    .skill div {
-        font-family: 'Space Mono', sans-serif;
-        font-size: 110%;
-        color: var(--second-color);
-        margin: 0 auto 5%;
-    }
-
-    .skill-bar {
-        height: 20px;
-        background-color: var(--white2-bg-color);
-        margin: 0 auto 5%;
-        border-radius: 155px;
-        width: 80%;
-    }
-
-    .skill-bar-fill {
-        height: inherit;
-        border-radius: inherit;
-        position: relative;
-        left: 0;
-    }
-
-    .project-name {
-        position: relative;
-        top: 5vw;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1209px) {
     #my-skills-list {
         position: relative;
         top: -25px;
