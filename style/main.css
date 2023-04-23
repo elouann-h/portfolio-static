@@ -1,0 +1,458 @@
+@import "./keyframes.css";
+@import "./animations.css";
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
+
+/* Variables */
+:root {
+    --background-color: #010101;
+    --grey-bg-color: rgba(123,123,123,1);
+    --white-bg-color: rgba(245,245,245,1);
+    --white2-bg-color: rgba(230,230,230,1);
+    --white3-bg-color: rgba(180,180,180,1);
+    --second-color: rgba(45, 45, 45, 1);
+    --title-color: #eee;
+    --links-color: rgba(50, 150, 180, 1);
+    --important-color: rgba(220, 115, 145, 1);
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar-track {
+    background: #000;
+}
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+/* Body style */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Main title */
+.main-title {
+    font-size: 300%;
+    text-align: center;
+    margin-top: 20%;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Scroll content */
+.scroll-logo {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.scroll-point {
+    opacity: 30%;
+    margin: 15%;
+}
+
+.scroll-text {
+    font-size: 210%;
+    margin-top: 7%;
+    margin-bottom: 24%;
+    opacity: 80%;
+}
+
+div.scroll-logo {
+    margin-top: 10%;
+}
+
+.scroll-logo h1 {
+    text-align: center;
+    animation-delay: 1s;
+}
+
+/* About me style */
+.about-me {
+    margin-top: 10%;
+    text-align: center;
+    color: var(--title-color);
+}
+
+.about-me-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 250%;
+}
+
+.about-me-text {
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 110%;
+    letter-spacing: 1px;
+}
+
+#about-me-first, #about-me-second, #about-me-third {
+    opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+    #transition-box-1 {
+        height: 100vh;
+        width: 100%;
+        background: var(--grey-bg-color);
+        background: linear-gradient(0deg, var(--grey-bg-color) 0%, var(--background-color) 100%);
+    }
+
+    #transition-box-2 {
+        height: 100vh;
+        width: 100%;
+        background: var(--white-bg-color);
+        background: linear-gradient(0deg, var(--white-bg-color) 0%, var(--grey-bg-color) 100%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #transition-box-1 {
+        height: 100vh;
+        width: 100%;
+    }
+
+    #transition-box-2 {
+        height: 100vh;
+        width: 100%;
+        background: var(--white-bg-color);
+    }
+}
+
+#my-description {
+    text-align: center;
+    background-color: var(--background-color);
+    font-family: 'Space Mono', monospace;
+    font-size: 3vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 7%;
+    padding-top: 5%;
+    color: var(--title-color);
+}
+
+@media screen and (min-width: 1209px) {
+    #my-description {
+        text-align: center;
+        background-color: var(--background-color);
+        font-family: 'Space Mono', monospace;
+        font-size: 2vw;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-bottom: 7%;
+        padding-top: 5%;
+        color: var(--title-color);
+    }
+}
+
+#me-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 70%;
+}
+
+.me-content {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Quicksand Light", sans-serif;
+}
+
+.me-content div {
+    width: 67vw;
+    margin: 5% auto;
+}
+
+#my-skills {
+    background-color: var(--white-bg-color);
+    top: -70px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+@media screen and (min-width: 1209px) {
+    #my-skills-list {
+        position: relative;
+        top: -25px;
+        left: -120px;
+    }
+
+    .skill {
+        height: 80px;
+    }
+
+    .skill div {
+        font-family: 'Space Mono', sans-serif;
+        font-size: 110%;
+        color: var(--second-color);
+        margin: 0 auto 5%;
+        display: inline-block;
+        width: 45%;
+    }
+
+    .skill-level {
+        text-align: left;
+    }
+
+    .skill-name {
+        text-align: right;
+    }
+
+    .skill-bar {
+        height: 20px;
+        background-color: var(--white2-bg-color);
+        margin: 0 auto 5%;
+        border-radius: 155px;
+    }
+
+    .skill-bar-fill {
+        height: inherit;
+        border-radius: inherit;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #my-skills-list {
+        position: relative;
+        top: -25px;
+    }
+
+    .skill {
+        height: 80px;
+    }
+
+    .skill div {
+        font-family: 'Space Mono', sans-serif;
+        font-size: 110%;
+        color: var(--second-color);
+        margin: 0 auto 5%;
+    }
+
+    .skill-bar {
+        height: 20px;
+        background-color: var(--white2-bg-color);
+        margin: 0 auto 5%;
+        border-radius: 155px;
+        width: 80%;
+    }
+
+    .skill-bar-fill {
+        height: inherit;
+        border-radius: inherit;
+        position: relative;
+        left: 0;
+    }
+
+    .project-name {
+        position: relative;
+        top: 5vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1209px) {
+    #my-skills-list {
+        position: relative;
+        top: -25px;
+    }
+
+    .skill {
+        height: 80px;
+    }
+
+    .skill div {
+        font-family: 'Space Mono', sans-serif;
+        font-size: 110%;
+        color: var(--second-color);
+        margin: 0 auto 5%;
+    }
+
+    .skill-bar {
+        height: 20px;
+        background-color: var(--white2-bg-color);
+        margin: 0 auto 5%;
+        border-radius: 155px;
+        width: 80%;
+    }
+
+    .skill-bar-fill {
+        height: inherit;
+        border-radius: inherit;
+        position: relative;
+        left: 0;
+    }
+
+    .project-name {
+        position: relative;
+        top: 5vw;
+    }
+}
+
+.tool-img {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 5%;
+}
+
+#my-tools-list div {
+    display: inline-block;
+    margin: 0 auto 5%;
+    width: 100px;
+}
+
+#my-tools-list {
+    text-align: center;
+}
+
+#my-tools {
+    background-color: var(--white-bg-color);
+    top: -140px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+#tools-description {
+    text-align: center;
+    color: var(--second-color);
+    font-family: 'Space Mono', monospace;
+    font-size: 110%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#about-my-work {
+    background-color: var(--white-bg-color);
+    width: 100%;
+    top: -210px;
+    position: relative;
+    padding-bottom: 10%;
+}
+
+.work-main-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 500%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color: var(--second-color);
+    letter-spacing: 5px;
+}
+
+#projects-list {
+    opacity: 0;
+}
+
+.project {
+    text-align: center;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.5);
+    width: 40%;
+    margin: 0 auto 5%;
+    padding: 0.5% 5% 2%;
+    animation: shadow-outset-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.project:hover {
+    animation: shadow-inset-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.project-sources-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-name {
+    font-family: 'Staatliches', cursive;
+    font-size: 200%;
+    color: var(--second-color);
+}
+
+.project-description {
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 110%;
+    color: var(--second-color);
+}
+
+.project-sources-elt a {
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 110%;
+    color: var(--links-color);
+}
+
+.project-role {
+    font-family: 'Quicksand Light', sans-serif;
+    font-size: 110%;
+    color: var(--important-color);
+}
+
+#contact-me {
+    background-color: var(--background-color);
+    top: -50px;
+    position: relative;
+    padding-bottom: 10%;
+}
+
+#contact-title {
+    color: var(--title-color);
+    font-family: "Pathway Extreme", sans-serif;
+    position: relative;
+    top: -200px;
+    font-size: 300%;
+    text-align: center;
+}
+
+#contact-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -150px;
+    text-align: center;
+}
+
+.contact-elt {
+    margin-bottom: 1%;
+}
+
+#contact-list li a {
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 130%;
+    color: var(--white-bg-color);
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+#contact-list li a:hover {
+    color: var(--white3-bg-color);
+}
+
+/* Last sentence */
+#last-sentence {
+    color: var(--white3-bg-color);
+    font-family: 'Pathway Extreme', sans-serif;
+    font-size: 90%;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+#tempo-header {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2%;
+}
+
+.header-logo {
+    width: 40px;
+    margin-right: 10px;
+}

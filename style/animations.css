@@ -1,0 +1,34 @@
+.text-focus-in {
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s forwards;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s forwards;
+}
+
+.text-focus-in-slow {
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s forwards;
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2.5s forwards;
+}
+
+.bounce-top {
+    -webkit-animation: bounce-top 4s infinite both;
+    animation: bounce-top 4s infinite both;
+}
+
+.text-blur-out {
+    animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.fade-in {
+    animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+.shadow-inset-center {
+    animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-in-blurred-top {
+    animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.slide-in-blurred-top-reversed {
+    animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) reverse both;
+}
